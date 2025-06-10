@@ -24,6 +24,7 @@ const Header = () => {
     { name: "Preços", path: "/precos" },
     { name: "Depoimentos", path: "/depoimentos" },
     { name: "Perguntas", path: "/perguntas" },
+    { name: "Afiliados", path: "/afiliados" },
     { name: "Contato", path: "/contato" },
   ];
 

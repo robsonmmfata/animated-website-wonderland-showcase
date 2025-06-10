@@ -77,9 +77,18 @@ const Contact = () => {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    // Handle form submission here
-    console.log("Form submitted:", formData);
-    // Reset form or show success message
+    
+    // Redirecionar para WhatsApp
+    const whatsappNumber = "5511999999999"; // Substitua pelo seu número
+    const message = `Olá! Meu nome é ${formData.name}.
+    
+Email: ${formData.email}
+Assunto: ${formData.subject}
+
+Mensagem: ${formData.message}`;
+    
+    const whatsappUrl = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(message)}`;
+    window.open(whatsappUrl, '_blank');
   };
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
@@ -108,8 +117,8 @@ const Contact = () => {
             </h1>
             
             <p className="text-xl text-gray-300 leading-relaxed max-w-2xl mx-auto">
-              Estamos aqui para ajudar! Entre em contato conosco e nossa equipe 
-              responderá o mais rápido possível.
+              Estamos aqui para ajudar! Entre em contato conosco via WhatsApp 
+              e nossa equipe responderá o mais rápido possível.
             </p>
           </div>
         </div>
@@ -218,10 +227,10 @@ const Contact = () => {
                     
                     <Button 
                       type="submit"
-                      className="w-full bg-gradient-to-r from-brand-purple to-brand-pink hover:from-brand-pink hover:to-brand-purple text-white font-semibold py-3 rounded-lg hover-scale hover-glow"
+                      className="w-full bg-gradient-to-r from-green-500 to-green-600 hover:from-green-600 hover:to-green-700 text-white font-semibold py-3 rounded-lg hover-scale hover-glow"
                     >
-                      <Send className="w-5 h-5 mr-2" />
-                      Enviar Mensagem
+                      <MessageCircle className="w-5 h-5 mr-2" />
+                      Enviar via WhatsApp
                     </Button>
                   </form>
                 </CardContent>
@@ -259,13 +268,16 @@ const Contact = () => {
                 </h3>
                 
                 <div className="space-y-4">
-                  <Card className="hover-scale cursor-pointer">
+                  <Card 
+                    className="hover-scale cursor-pointer"
+                    onClick={() => window.open('https://wa.me/5511999999999', '_blank')}
+                  >
                     <CardContent className="p-4 flex items-center space-x-4">
-                      <div className="bg-brand-purple/10 p-3 rounded-lg">
-                        <MessageCircle className="w-6 h-6 text-brand-purple" />
+                      <div className="bg-green-500/10 p-3 rounded-lg">
+                        <MessageCircle className="w-6 h-6 text-green-500" />
                       </div>
                       <div>
-                        <div className="font-semibold text-gray-900">Chat ao Vivo</div>
+                        <div className="font-semibold text-gray-900">WhatsApp</div>
                         <div className="text-gray-600 text-sm">Disponível 24/7</div>
                       </div>
                     </CardContent>
