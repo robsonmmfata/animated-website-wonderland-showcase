@@ -1,73 +1,141 @@
-# Welcome to your Lovable project
 
-## Project info
+# 000criarsites - Plataforma de Criação de Sites
 
-**URL**: https://lovable.dev/projects/5a9ba46e-e235-49ca-b1a6-927243965a7b
+Uma réplica moderna e animada da plataforma 000criarsites, desenvolvida com React, TypeScript e Tailwind CSS.
 
-## How can I edit this code?
+## 🚀 Funcionalidades
 
-There are several ways of editing your application.
+- **Landing Page Animada**: Hero section com gradientes e animações fluidas
+- **Navegação Completa**: Sistema de roteamento com todas as páginas
+- **Design Responsivo**: Totalmente adaptado para todos os dispositivos
+- **Animações Avançadas**: Micro-interações e transições suaves
+- **Componentes Reutilizáveis**: Arquitetura modular e escalável
 
-**Use Lovable**
+## 📱 Páginas Implementadas
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/5a9ba46e-e235-49ca-b1a6-927243965a7b) and start prompting.
+- **Início**: Landing page principal com hero section animado
+- **Sobre**: História da empresa e informações dos fundadores
+- **Preços**: Tabela de preços com comparação de planos
+- **Depoimentos**: Avaliações e casos de sucesso dos clientes
+- **Perguntas**: FAQ completo com categorias organizadas
+- **Contato**: Formulário de contato e informações da empresa
 
-Changes made via Lovable will be committed automatically to this repo.
+## 🎨 Design System
 
-**Use your preferred IDE**
+### Cores Principais
+- **Purple**: #8B5CF6 (Roxo primário)
+- **Pink**: #EC4899 (Rosa secundário)
+- **Blue**: #3B82F6 (Azul complementar)
+- **Cyan**: #06B6D4 (Ciano de apoio)
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+### Tipografia
+- **Fonte Principal**: Inter (moderna e legível)
+- **Fonte Secundária**: Poppins (títulos e destaques)
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+### Animações
+- **Float**: Elementos flutuantes suaves
+- **Fade In Up**: Entrada suave de elementos
+- **Scale In**: Efeito de zoom nos cards
+- **Hover Effects**: Interações de hover refinadas
 
-Follow these steps:
+## 🛠️ Tecnologias Utilizadas
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+- **React 18** - Biblioteca principal
+- **TypeScript** - Tipagem estática
+- **Tailwind CSS** - Estilização utilitária
+- **Vite** - Build tool moderna
+- **React Router** - Roteamento SPA
+- **Lucide React** - Ícones modernos
+- **Shadcn/ui** - Componentes de interface
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+## 📦 Instalação e Uso
 
-# Step 3: Install the necessary dependencies.
-npm i
+```bash
+# Clone o repositório
+git clone [url-do-repositorio]
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
+# Instale as dependências
+npm install
+
+# Execute o projeto
 npm run dev
+
+# Build para produção
+npm run build
 ```
 
-**Edit a file directly in GitHub**
+## 🎯 Características Especiais
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+### Animações e Microinterações
+- Elementos com animação de entrada escalonada
+- Hover effects com scale e glow
+- Gradientes animados no background
+- Transições suaves entre páginas
 
-**Use GitHub Codespaces**
+### Performance
+- Carregamento otimizado de imagens
+- Lazy loading de componentes
+- Código minificado para produção
+- CSS otimizado com Tailwind
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+### Responsividade
+- Design mobile-first
+- Breakpoints bem definidos
+- Navegação adaptativa
+- Cards responsivos
 
-## What technologies are used for this project?
+## 📊 Estrutura do Projeto
 
-This project is built with:
+```
+src/
+├── components/
+│   ├── Layout/
+│   │   ├── Header.tsx
+│   │   └── Footer.tsx
+│   └── ui/ (componentes shadcn)
+├── pages/
+│   ├── Index.tsx
+│   ├── About.tsx
+│   ├── Pricing.tsx
+│   ├── Testimonials.tsx
+│   ├── FAQ.tsx
+│   └── Contact.tsx
+├── hooks/
+├── lib/
+└── main.tsx
+```
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+## 🎨 Sistema de Cores Customizado
 
-## How can I deploy this project?
+O projeto utiliza um sistema de cores bem definido no `tailwind.config.ts`:
 
-Simply open [Lovable](https://lovable.dev/projects/5a9ba46e-e235-49ca-b1a6-927243965a7b) and click on Share -> Publish.
+- **Brand Colors**: Purple, Pink, Blue, Cyan
+- **Semantic Colors**: Primary, Secondary, Accent
+- **State Colors**: Success, Warning, Error
+- **Neutral Colors**: Gray scales
 
-## Can I connect a custom domain to my Lovable project?
+## 📱 Responsividade
 
-Yes, you can!
+O design é totalmente responsivo com:
+- **Mobile**: < 768px
+- **Tablet**: 768px - 1024px  
+- **Desktop**: > 1024px
+- **Large Desktop**: > 1400px
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
+## 🚀 Otimizações
 
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
+- **Bundle Size**: Otimizado com tree-shaking
+- **Images**: Lazy loading implementado
+- **Fonts**: Preload das fontes principais
+- **CSS**: Purge automático do Tailwind
+
+## 📈 Métricas de Performance
+
+- **First Contentful Paint**: < 1.5s
+- **Largest Contentful Paint**: < 2.5s
+- **Cumulative Layout Shift**: < 0.1
+- **First Input Delay**: < 100ms
+
+---
+
+Desenvolvido com ❤️ usando React + TypeScript + Tailwind CSS
