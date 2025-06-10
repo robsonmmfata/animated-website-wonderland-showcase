@@ -64,9 +64,11 @@ const Header = () => {
                 )}
               </Link>
             ))}
-            <Button className="bg-gradient-to-r from-brand-purple to-brand-pink hover:from-brand-pink hover:to-brand-purple text-white font-semibold px-6 py-2 rounded-full hover-scale hover-glow">
-              Loja
-            </Button>
+            <Link to="/editor">
+              <Button className="bg-gradient-to-r from-brand-purple to-brand-pink hover:from-brand-pink hover:to-brand-purple text-white font-semibold px-6 py-2 rounded-full hover-scale hover-glow">
+                Editor
+              </Button>
+            </Link>
           </nav>
 
           {/* Mobile Menu Button */}
@@ -97,9 +99,11 @@ const Header = () => {
                 </Link>
               ))}
               <div className="px-4 py-3">
-                <Button className="w-full bg-gradient-to-r from-brand-purple to-brand-pink hover:from-brand-pink hover:to-brand-purple text-white font-semibold py-2 rounded-full">
-                  Loja
-                </Button>
+                <Link to="/editor">
+                  <Button className="w-full bg-gradient-to-r from-brand-purple to-brand-pink hover:from-brand-pink hover:to-brand-purple text-white font-semibold py-2 rounded-full">
+                    Editor
+                  </Button>
+                </Link>
               </div>
             </nav>
           </div>

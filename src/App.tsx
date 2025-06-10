@@ -11,6 +11,7 @@ import Testimonials from "./pages/Testimonials";
 import FAQ from "./pages/FAQ";
 import Contact from "./pages/Contact";
 import Affiliates from "./pages/Affiliates";
+import Dashboard from "./pages/Dashboard";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -29,6 +30,7 @@ const App = () => (
           <Route path="/perguntas" element={<FAQ />} />
           <Route path="/contato" element={<Contact />} />
           <Route path="/afiliados" element={<Affiliates />} />
+          <Route path="/editor" element={<Dashboard />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </BrowserRouter>
