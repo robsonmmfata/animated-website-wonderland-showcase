@@ -1,6 +1,8 @@
+
 import Header from "@/components/Layout/Header";
 import Footer from "@/components/Layout/Footer";
 import { Badge } from "@/components/ui/badge";
+import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Check } from "lucide-react";
 import PlanCard from "@/components/PlanCard";
